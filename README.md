@@ -2,7 +2,7 @@
 > 开放网关
 
 ### 建设目标
-![输入图片说明](https://images.gitee.com/uploads/images/2018/1204/015700_4d9ea96f_112702.jpeg "8.jpg")
+![输入图片说明](https://images.gitee.com/uploads/images/2018/1204/015815_debe4523_112702.jpeg "9.jpg")
 
 ### open-gateway模块
 - gateway-dubbo  dubbo相关服务处理
