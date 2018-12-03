@@ -1,10 +1,13 @@
-# open-gateway
+### open-gateway
+> 开放网关
 
-#### 项目介绍
-开放网关
+### 技术
+- dubbo
+- springboot
 
-用于自己所有应用请求的入口
+### V0.0.1 TODO
+1. 接口设计符合API规范
 
-#### 技术
-dubbo
-springboot
+
+
+
