@@ -9,6 +9,7 @@
         <version>2.1.1.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+    <!--统一流量入口-->
     <groupId>com.open.gateway</groupId>
     <artifactId>open-gateway</artifactId>
     <version>1.0.0</version>
@@ -16,9 +17,14 @@
     <description>Open Gateway</description>
 
     <modules>
+        <!--处理一些dubbo,做一些统一的封装-->
         <module>gateway-dubbo</module>
+        <!--用户原子服务-->
         <module>open-basic-user</module>
+        <!--评论原子服务-->
         <module>open-basic-comment</module>
+        <!--定义一些统一的接口,用于继承-->
+        <module>open-basic-inter</module>
     </modules>
 
     <properties>
