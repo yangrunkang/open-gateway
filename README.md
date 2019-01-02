@@ -1,5 +1,5 @@
 ### open-gateway
-> 开放网关
+> 开放网关 —— 意为接纳一切,欢迎进入开发的世界
 
 ### 建设目标
 1. 整合用户资源 
@@ -34,6 +34,8 @@
 1.创建子模块时出现以下错误:
     Failed to create a Maven project: 'D:/GitLab/OpenSeries/open-gateway/pom.xml' already exists in VFS
   解决方法:
+
+2.开发过程中,如果看不到父项目了,把父项目放在一个文件夹下,idea打开这个文件夹
 
 
 

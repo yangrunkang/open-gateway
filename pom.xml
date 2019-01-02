@@ -25,56 +25,9 @@
         <module>open-basic-comment</module>
         <!--定义一些统一的接口,用于继承-->
         <module>open-basic-inter</module>
+        <!--网关入库-->
+        <module>gateway-x</module>
     </modules>
 
-    <properties>
-        <java.version>1.8</java.version>
-        <open.gateway.series>1.0.0</open.gateway.series>
-    </properties>
-
-    <dependencies>
-
-
-        <dependency>
-            <groupId>com.gateway.dubbo</groupId>
-            <artifactId>gateway-dubbo</artifactId>
-            <version>${open.gateway.series}</version>
-        </dependency>
-
-        <!--加上这个之后会出现验证页面-->
-        <!--<dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.restdocs</groupId>
-            <artifactId>spring-restdocs-mockmvc</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
