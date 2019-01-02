@@ -1,4 +1,4 @@
-package com.open.basic.user.openbasicuser;
+package com.open.basic.user;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

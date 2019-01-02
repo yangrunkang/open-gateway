@@ -1,4 +1,4 @@
-package com.open.basic.user.openbasicuser;
+package com.open.basic.user;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
