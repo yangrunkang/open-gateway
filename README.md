@@ -17,7 +17,7 @@
 - open-basic-comment 评论服务
 - open-basic-user 用户服务
 - open-basic-inter 主要定义统一接口,用于规范代码,置顶业务框架
-- open-service-framework 主要做一些服务框架,用于服务业务(不服务于中间件)
+- open-tools 工具,主要是便于开发
 
 ### 技术
 - dubbo

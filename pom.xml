@@ -27,6 +27,8 @@
         <module>open-basic-inter</module>
         <!--网关入库-->
         <module>gateway-x</module>
+        <!--工具-->
+        <module>open-tools</module>
     </modules>
 
 
