@@ -8,8 +8,9 @@
         <version>1.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
+    <groupId>com.gateway.x</groupId>
     <artifactId>gateway-x</artifactId>
+    <packaging>jar</packaging>
 
 
 </project>

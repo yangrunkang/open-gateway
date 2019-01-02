@@ -9,9 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.open.gateway</groupId>
+    <groupId>com.open.basic.inter</groupId>
     <artifactId>open-basic-inter</artifactId>
     <version>1.0.0</version>
+    <packaging>jar</packaging>
 
 
 </project>
