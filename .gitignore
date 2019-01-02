@@ -6,9 +6,6 @@ target/
 *.tar
 *.tar.gz
 
-# give permission to those jars
-!./open-tools/src/main/resources/jars/mysql-connector-java-5.1.14.jar
-
 # eclipse ignore
 .settings/
 .project
