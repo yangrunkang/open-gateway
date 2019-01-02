@@ -14,7 +14,10 @@
 ### open-gateway模块
 - gateway-dubbo  dubbo相关服务处理
 - gateway-framework gateway框架服务
-- 
+- open-basic-comment 评论服务
+- open-basic-user 用户服务
+- open-basic-inter 主要定义统一接口,用于规范代码,置顶业务框架
+- open-service-framework 主要做一些服务框架,用于服务业务(不服务于中间件)
 
 ### 技术
 - dubbo
@@ -26,6 +29,11 @@
 2. 通过postman可以发起请求
 3. 继承swagger
 
+
+### 问题总结
+1.创建子模块时出现以下错误:
+    Failed to create a Maven project: 'D:/GitLab/OpenSeries/open-gateway/pom.xml' already exists in VFS
+  解决方法:
 
 
 
