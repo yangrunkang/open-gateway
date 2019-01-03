@@ -8,3 +8,6 @@
  * @author $user$
  * @date $date$ $time$
  */
+ 
+ ### 包名规范
+ com.项目名顺序("-" 替换成 ",")
