@@ -12,5 +12,30 @@
     <artifactId>gateway-x</artifactId>
     <packaging>jar</packaging>
 
+    <dependencies>
 
+        <!--暂时引用spi-->
+        <dependency>
+            <groupId>com.open.gateway</groupId>
+            <artifactId>open-spi-user</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.open.gateway</groupId>
+            <artifactId>open-framework</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 </project>
