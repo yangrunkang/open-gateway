@@ -11,3 +11,7 @@
  
  ### 包名规范
  com.项目名顺序("-" 替换成 ",")
+
+ ### 项目文件编码
+ #### idea 设置路径
+ > File -> Settings -> Editor -> File Encodings -> Global/Project Encoding
