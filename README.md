@@ -28,6 +28,10 @@
 - springboot
 - guava
 
+### 规划
+- 缓存服务
+- 待定
+
 ### V0.0.1 TODO
 1. 接口设计符合API规范
 2. 通过postman可以发起请求
