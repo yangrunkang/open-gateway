@@ -18,7 +18,7 @@
 
     <modules>
         <!--处理一些dubbo,做一些统一的封装-->
-        <module>gateway-dubbo</module>
+        <module>gateway-x-dubbo</module>
         <!--用户原子服务-->
         <module>open-basic-user</module>
         <!--评论原子服务-->

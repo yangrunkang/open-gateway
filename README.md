@@ -12,7 +12,7 @@
 ![输入图片说明](https://images.gitee.com/uploads/images/2018/1204/015815_debe4523_112702.jpeg "9.jpg")
 
 ### open-gateway模块
-- gateway-dubbo  dubbo相关服务处理
+- gateway-x-dubbo  dubbo相关服务处理
 - gateway-framework gateway框架服务
 - open-basic-comment 评论服务
 - open-basic-user 用户服务
