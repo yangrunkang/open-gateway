@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.1.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <!--统一流量入口-->
+    <groupId>com.open.gateway</groupId>
+    <artifactId>open-gateway</artifactId>
+    <version>1.0.0</version>
+    <name>open-gateway</name>
+    <description>Open Gateway</description>
+
+    <modules>
+        <!--处理一些dubbo,做一些统一的封装-->
+        <module>gateway-x-dubbo</module>
+        <!--用户原子服务-->
+        <module>open-basic-user</module>
+        <!--评论原子服务-->
+        <module>open-basic-comment</module>
+        <!--定义一些统一的接口,用于继承-->
+        <module>open-basic-inter</module>
+        <!--网关入库-->
+        <module>gateway-x</module>
+        <!--工具-->
+        <module>open-tools</module>
+        <!--统一open框架-->
+        <module>open-framework</module>
+
+        <!--spi系列-->
+        <!--用户-->
+        <module>open-spi-user</module>
+    </modules>
+
+
+</project>
