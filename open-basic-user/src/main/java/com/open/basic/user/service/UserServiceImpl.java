@@ -1,6 +1,5 @@
 package com.open.basic.user.service;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.open.spi.user.UserService;
 import org.springframework.stereotype.Component;
 
@@ -10,7 +9,6 @@ import org.springframework.stereotype.Component;
  * @author runkangyang
  * @date 2019/1/3 11:37 PM
  */
-@Service(interfaceClass = UserService.class)
 @Component
 public class UserServiceImpl implements UserService {
 

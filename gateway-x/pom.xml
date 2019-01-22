@@ -16,13 +16,13 @@
 
         <!--暂时引用spi-->
         <dependency>
-            <groupId>com.open.gateway</groupId>
+            <groupId>com.open.spi.user</groupId>
             <artifactId>open-spi-user</artifactId>
             <version>1.0.0</version>
         </dependency>
 
         <dependency>
-            <groupId>com.open.gateway</groupId>
+            <groupId>com.open.framework</groupId>
             <artifactId>open-framework</artifactId>
             <version>1.0.0</version>
         </dependency>

@@ -8,20 +8,8 @@
         <version>1.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
+    <groupId>com.open.framework</groupId>
     <artifactId>open-framework</artifactId>
+    <version>1.0.0</version>
 
-    <dependencies>
-        <!--集成dubbo-->
-        <dependency>
-            <groupId>com.alibaba.spring.boot</groupId>
-            <artifactId>dubbo-spring-boot-starter</artifactId>
-            <version>2.0.0</version>
-        </dependency>
-        <!--集成gateway-x-dubbo-->
-        <dependency>
-            <groupId>com.gateway.x.dubbo</groupId>
-            <artifactId>gateway-x-dubbo</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-    </dependencies>
 </project>
