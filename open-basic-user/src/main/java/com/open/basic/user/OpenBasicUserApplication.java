@@ -3,6 +3,7 @@ package com.open.basic.user;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * 开放-用户服务-启动类
@@ -11,6 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @date 2019/1/3 14:32
  */
 @SpringBootApplication
+@EnableDiscoveryClient
 @MapperScan("com.open.basic.user.mapper")
 public class OpenBasicUserApplication {
 

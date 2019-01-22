@@ -39,6 +39,7 @@ http://blog.didispace.com/springcloud1/
 1. 接口设计符合API规范
 2. 通过postman可以发起请求
 3. 继承swagger
+4. 多环境打包,集成profile
 
 
 ### 问题总结
