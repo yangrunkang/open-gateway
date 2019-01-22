@@ -1,5 +1,7 @@
 package com.gateway.x.controller;
 
+import com.gateway.x.service.FeignClient;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,6 +15,19 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class GateWayX {
+
+
+    @Autowired
+    private FeignClient feignClient;
+
+
+
+    @RequestMapping("/sayHelloFeign")
+    @ResponseBody
+    public String sayHelloFeign(){
+        return "sayHelloFeign Hello,from GateWayX" + feignClient.sayHelloFeign();
+    }
+
 
 
     @RequestMapping("/hello")
