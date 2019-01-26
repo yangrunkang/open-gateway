@@ -13,6 +13,7 @@
     <artifactId>gateway-x-server-center</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
+    <description>注册中心</description>
 
     <dependencies>
         <!--注册中心服务,所以是server-->
@@ -20,5 +21,7 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
+
+
     </dependencies>
 </project>

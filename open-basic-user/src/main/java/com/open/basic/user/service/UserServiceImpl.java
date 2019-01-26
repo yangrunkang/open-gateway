@@ -11,13 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @author runkangyang
  * @date 2019/1/3 11:37 PM
  */
-@Controller
 public class UserServiceImpl implements UserService {
 
-    @Override
-    @RequestMapping("/sayHello")
-    public String sayHello() {
-        return "Hello, I am from open-basic-user";
-    }
 
 }

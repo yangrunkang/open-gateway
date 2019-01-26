@@ -8,10 +8,5 @@ package com.open.spi.user;
  */
 public interface UserService {
 
-    /**
-     * 打招呼
-     * @return
-     */
-    String sayHello();
 
 }

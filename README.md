@@ -28,8 +28,8 @@
 - springboot
 - springcloud
 
-### 资料(要看Finchley.RELEASE版本的资料)
-https://blog.csdn.net/qq_29534483/article/list/1
+### 资料(要看Finchley.SR2版本的资料)
+https://blog.csdn.net/forezp/article/details/81040925
 
 ### 规划
 - 缓存服务
