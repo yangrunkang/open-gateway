@@ -22,7 +22,8 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Finchley.RELEASE</version>
+                <!--经测试 Finchley.RELEASE 有 bug 多次请求会报空指针异常，SR2 是 Spring Cloud 的最新版本-->
+                <version>Finchley.SR2</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -30,27 +31,15 @@
     </dependencyManagement>
 
     <modules>
-        <!--############业务服务中心#################-->
-        <!--用户原子服务-->
         <module>open-basic-user</module>
-        <!--评论原子服务-->
         <module>open-basic-comment</module>
-        <!--定义一些统一的接口,用于继承-->
         <module>open-basic-inter</module>
-        <!--############spi系列#####################-->
-        <!--用户-->
         <module>open-spi-user</module>
-
-        <!--############系统组件####################-->
-        <!--网关入库-->
         <module>gateway-x</module>
         <module>gateway-x-server-center</module>
-
-        <!--############open系列组件#################-->
-        <!--工具-->
         <module>open-tools</module>
-        <!--统一open框架-->
         <module>open-framework</module>
+        <module>open-test</module>
     </modules>
 
 
