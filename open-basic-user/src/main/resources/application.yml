@@ -1,0 +1,19 @@
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:1001/eureka/
+mybatis:
+    config-locations: classpath:mybatis/mybatis-config.xml
+    mapper-locations: classpath:mapper/*.xml
+    type-aliases-package: com.open.basic.user.entity
+server:
+    port: 2001
+spring:
+    application:
+        name: open-basic-user
+    datasource:
+        driverClassName: com.mysql.jdbc.Driver
+        password: root
+        type: com.alibaba.druid.pool.DruidDataSource
+        url: jdbc:mysql://127.0.0.1:3306/addoiles?characterEncoding=utf8
+        username: root
