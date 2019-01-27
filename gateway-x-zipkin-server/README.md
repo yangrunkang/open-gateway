@@ -3,3 +3,6 @@
 https://dl.bintray.com/openzipkin/maven/io/zipkin/java/zipkin-server/
 
 java -jar zipkin-server-2.9.4-exec.jar
+
+
+http://localhost:9411 查看链路追踪信息

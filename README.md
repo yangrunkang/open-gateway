@@ -46,8 +46,12 @@
 1. 接口设计符合API规范
 2. 通过postman可以发起请求
 3. 继承swagger
-4. 多环境打包,集成profile
-5. https://www.fangzhipeng.com/springcloud/2019/01/04/sc-f-boot-admin/
+4. https://www.fangzhipeng.com/springcloud/2019/01/04/sc-f-boot-admin/
+
+### 在上线前,必须完成
+1. 高可用的服务注册中心(Finchley版本)
+2. 高可用的配置中心(Finchley版本)
+3. 多环境打包,集成profile
 
 
 ### 问题总结
