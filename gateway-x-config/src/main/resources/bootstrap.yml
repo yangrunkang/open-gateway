@@ -19,6 +19,9 @@ spring:
       username: guest
       password: guest
       host: localhost
+    # 配置zipkin链路收集server地址
+    zipkin:
+      base-url: http://localhost:9411
 
 
 #证明配置服务中心可以从远程程序获取配置信息  foo没有任何意义,只是随便写的,验证下

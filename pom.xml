@@ -55,6 +55,7 @@
         <module>open-test</module>
         <module>gateway-x-zuul</module>
         <module>gateway-x-config</module>
+        <module>gateway-x-zipkin-server</module>
     </modules>
 
 

@@ -31,6 +31,9 @@ spring:
       username: guest
       password: guest
       host: localhost
+    # 配置zipkin链路收集server地址
+    zipkin:
+      base-url: http://localhost:9411
 feign:
   hystrix:
     # Feign是自带断路器的，在D版本的Spring Cloud之后，它没有默认打开。需要在配置文件中配置打开它

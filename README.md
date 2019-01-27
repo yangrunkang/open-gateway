@@ -20,6 +20,11 @@
 - open-tools 工具,主要是便于开发
 - open-framework 统一open系列框架服务,例如集成其他中间件服务
 
+### 应用启动顺序
+- 服务注册中心
+- 配置中心
+- 其他
+
 ### open-spi系列
 - open-spi-user 用户spi
 

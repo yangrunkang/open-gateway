@@ -36,3 +36,4 @@ logs/
 *.jar
 *.war
 *.ear
+!zipkin-server-2.9.4-exec.jar
