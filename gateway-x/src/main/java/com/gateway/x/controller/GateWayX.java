@@ -26,7 +26,7 @@ public class GateWayX {
 
     /**
      * 通过服务注册中心调用服务
-     * http://localhost:8764/hiFromBasicUserService?name=yrk123
+     * http://localhost:8764/hiFromBasicUserServiceRibbon?name=hiFromBasicUserServiceRibbon
      */
     @GetMapping(value = "/hiFromBasicUserServiceRibbon")
     public String hiRibbon(@RequestParam String name) {
@@ -34,7 +34,7 @@ public class GateWayX {
     }
 
     /**
-     * http://localhost:8764/hiFromBasicUserServiceFeign?name=forezp33
+     * http://localhost:8764/hiFromBasicUserServiceFeign?name=hiFromBasicUserServiceFeign
      *
      * @param name
      * @return

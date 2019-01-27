@@ -1,5 +1,6 @@
 package com.gateway.x.service;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -20,9 +21,21 @@ public class HelloServiceRibbon {
     @Resource
     private RestTemplate restTemplate;
 
+    @HystrixCommand(fallbackMethod = "hiError") // 熔断器
     public String hiService(String name) {
         return restTemplate.getForObject("http://open-basic-user/hi?name=" + name, String.class);
     }
+
+    /**
+     * 熔断方法
+     *
+     * @param name
+     * @return
+     */
+    public String hiError(String name) {
+        return "[HelloServiceRibbon]hi," + name + ",sorry,error!";
+    }
+
 
 
 }

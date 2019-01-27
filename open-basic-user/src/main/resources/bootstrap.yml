@@ -3,16 +3,25 @@ eureka:
         serviceUrl:
             # 我要将自己的服务注册到这个地址
             defaultZone: http://localhost:8761/eureka/
+    instance:
+      # 解决注册服务慢的问题,缺省值为30s,这里改为5s(心跳时间)
+      lease-renewal-interval-in-seconds: 5
+
+# mybatis 配置
 mybatis:
     config-locations: classpath:mybatis/mybatis-config.xml
     mapper-locations: classpath:mapper/*.xml
     type-aliases-package: com.open.basic.user.entity
+
+# 服务端口配置
 server:
-    port: 8773
+    port: 8772
+# spring 相关配置
 spring:
     application:
         # 服务名 这个很重要，这在以后的服务与服务之间相互调用一般都是根据这个name
         name: open-basic-user
+    # 数据源配置
     datasource:
         driverClassName: com.mysql.jdbc.Driver
         password: root
