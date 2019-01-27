@@ -13,7 +13,7 @@ import javax.annotation.Resource;
  * @date 1/27/19 00:37
  */
 @Service
-public class HelloService {
+public class HelloServiceRibbon {
     /**
      * 通过之前注入ioc容器的restTemplate来消费服务接口
      */
