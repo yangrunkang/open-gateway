@@ -54,6 +54,7 @@
         <module>open-framework</module>
         <module>open-test</module>
         <module>gateway-x-zuul</module>
+        <module>gateway-x-config</module>
     </modules>
 
 

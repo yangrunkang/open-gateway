@@ -29,7 +29,8 @@
 - springcloud
 
 ### 资料(要看Finchley.SR2版本的资料)
-https://blog.csdn.net/forezp/article/details/81040925
+- Spring Cloud详细教程 https://blog.csdn.net/forezp/article/details/81040925
+- Spring Config https://windmt.com/2018/04/19/spring-cloud-7-config-sample/
 
 ### 规划
 - 缓存服务

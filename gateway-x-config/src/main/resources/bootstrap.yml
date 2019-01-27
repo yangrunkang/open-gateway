@@ -1,0 +1,41 @@
+server:
+    port: 8888
+spring:
+    application:
+        name: gateway-x-config
+#    profiles:
+#      active: test   默认是default
+    cloud:
+        config:
+            label: master
+            server:
+                git:
+                    password: ''
+                    searchPaths: configFiles
+                    uri: https://github.com/yangrunkang/config.git
+                    username: ''
+
+
+#证明配置服务中心可以从远程程序获取配置信息  foo没有任何意义,只是随便写的,验证下
+#http://localhost:8888/foo/dev
+
+# 验证: http://localhost:8888/gateway-x-config/default
+
+# flag  如果要使用配置文件中的值 配置文件命有要求 applicationName + "-" + profile + ".properties"
+# http://localhost:8888/gateway-x-config/test 获取profile为test的 文件配置gateway-x-config-test.properties
+# http://localhost:8888/gateway-x-config/default 获取profile为test的 文件配置gateway-x-config-default.properties
+
+
+
+#http请求地址和资源文件映射如下:
+#/{application}/{profile}[/{label}]
+#/{application}-{profile}.yml
+#/{label}/{application}-{profile}.yml
+#/{application}-{profile}.properties
+#/{label}/{application}-{profile}.properties
+
+
+# 配置的搜索路径是test
+# /gateway-x-config/test/master/test.properties
+# result: http://localhost:8888/gateway-x-config/test/master/test.properties
+# result: http://localhost:8888/gateway-x-config/test/master/dev.properties
