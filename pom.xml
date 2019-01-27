@@ -53,6 +53,7 @@
         <module>open-tools</module>
         <module>open-framework</module>
         <module>open-test</module>
+        <module>gateway-x-zuul</module>
     </modules>
 
 

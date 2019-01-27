@@ -1,0 +1,22 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8769
+spring:
+  application:
+    name: gateway-zuul
+
+zuul:
+  # 没有其他的服务,暂时都访问到一个(gateway-x代表多个app的网关入口,这里就使用网关x来替代了,这里主要是验证api-a 和 api-b这个路由url)
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: gateway-x
+    api-b:
+      path: /api-b/**
+      serviceId: gateway-x
+
+# http://localhost:8769/api-b/hiFromBasicUserServiceRibbon?name=hiFromBasicUserServiceRibbon
+#
