@@ -43,8 +43,8 @@ management:
   endpoints:
     web:
       exposure:
-        # refresh 基于post; bus-refresh 基于事件(可以通知n个客户端,完成集群上的自动化更新)
-        include: bus-refresh
+        # refresh:基于post; bus-refresh:基于事件(可以通知n个客户端,完成集群上的自动化更新); hystrix.stream: hystrix dashboard指标收集
+        include: bus-refresh,hystrix.stream
 
 # curl -X POST http://localhost:8764/actuator/refresh  基于spring-cloud-config
 # curl -X POST http://localhost:8764/actuator/bus-refresh  基于 spring-cloud-bus
