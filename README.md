@@ -31,6 +31,7 @@
 ### 资料(要看Finchley.SR2版本的资料)
 - Spring Cloud详细教程 https://blog.csdn.net/forezp/article/details/81040925
 - Spring Config https://windmt.com/2018/04/19/spring-cloud-7-config-sample/
+- 获取依赖关系https://start.spring.io/actuator/info  见本地缓存(20190128):SpringDependencyInfo.json
 
 ### 规划
 - 缓存服务
@@ -41,6 +42,7 @@
 2. 通过postman可以发起请求
 3. 继承swagger
 4. 多环境打包,集成profile
+5. https://www.fangzhipeng.com/springcloud/2019/01/04/sc-f-boot-admin/
 
 
 ### 问题总结

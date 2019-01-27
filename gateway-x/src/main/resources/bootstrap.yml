@@ -19,19 +19,29 @@ spring:
         uri: http://localhost:8888/
         # 指定读取配置中心哪个文件 默认文件明是 name + "-" + profile.properties
         #   也只有指定这个,git上的变更了,这里才可以读取到(/actuator/refresh),不能使用本服务的spring.application.name这个值
-        # 这个没有被服务中心使用,所以即使 gateway-x + "-" + profile.properties 值更新了,也不能实时读取到,只有
-        # 重启才可以读取到!
+        # 这个没有被服务中心使用,所以即使 gateway-x + "-" + profile.properties 值更新了,也不能实时读取到,只有重启才可以读取到!
         # 客户端重新读取配置 使用post方法请求 curl -X POST http://localhost:8764/actuator/refresh
         name: gateway-x-config
+      bus:
+        enabled: true
+        trace:
+          enabled: true
+    rabbitmq:
+      port: 5672
+      username: guest
+      password: guest
+      host: localhost
 feign:
   hystrix:
     # Feign是自带断路器的，在D版本的Spring Cloud之后，它没有默认打开。需要在配置文件中配置打开它
     enabled: true
-# Spring Boot 1.5.X 以上默认开通了安全认证，所以要在配置文件 application.yml 中
-# 添加以下配置以将/actuator/refresh这个 Endpoint 暴露出来
+# Spring Boot 1.5.X 以上默认开通了安全认证，所以要在配置文件 application.yml 中 添加以下配置以将/actuator/refresh这个 Endpoint 暴露出来
 management:
   endpoints:
     web:
       exposure:
-        include: refresh
-# 后续我们将继续学习如何通过 Spring Cloud Bus 来实现以消息总线的方式进行通知配置信息的变化，完成集群上的自动化更新
+        # refresh 基于post; bus-refresh 基于事件(可以通知n个客户端,完成集群上的自动化更新)
+        include: bus-refresh
+
+# curl -X POST http://localhost:8764/actuator/refresh  基于spring-cloud-config
+# curl -X POST http://localhost:8764/actuator/bus-refresh  基于 spring-cloud-bus
