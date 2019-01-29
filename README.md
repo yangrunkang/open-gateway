@@ -9,7 +9,7 @@
 5. 流量统一管理
 6. 对外开放API服务(可能是收费模式)
 
-![OpenGateWay系统架构](https://github.com/kangrunyang/open-gateway/blob/master/asserts/OpenGateWay系统架构.png "OpenGateWay系统架构.png")
+![OpenGateWay系统架构](https://github.com/kangrunyang/open-gateway/blob/master/asserts/OpenGateway%E8%AE%BE%E8%AE%A1-%E5%9B%BE%E8%A1%A8.svg)
 
 ### open-gateway模块
 - gateway-x-server-center  springcloud服务中心
