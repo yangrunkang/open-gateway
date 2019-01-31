@@ -58,12 +58,12 @@
 1.创建子模块时出现以下错误:<br />
 Failed to create a Maven project: 'D:/GitLab/OpenSeries/open-gateway/pom.xml' already exists in VFS<br />
   解决方法:<br />
-![输入图片说明](https://images.gitee.com/uploads/images/2019/0102/154059_b9b3c39b_112702.png "微信截图_20190102153220.png")
+![新建module命名](https://github.com/kangrunyang/open-gateway/blob/dev-0.0.1/asserts/命名.png)
 
 2.开发过程中,如果看不到父项目了,把父项目放在一个文件夹下,idea打开这个文件夹
 
 3.Idea插件安装<br />
-![输入图片说明](https://images.gitee.com/uploads/images/2019/0104/095407_b5bea096_112702.png "微信截图_20190104094937.png")
+![idea插件安装](https://github.com/kangrunyang/open-gateway/blob/dev-0.0.1/asserts/idea插件安装.png)
 
 
 
