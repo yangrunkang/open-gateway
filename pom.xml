@@ -57,6 +57,7 @@
         <module>gateway-x-config</module>
         <module>gateway-x-zipkin-server</module>
         <module>gateway-x-hystrix-dashboard</module>
+        <module>open-experiment</module>
     </modules>
 
 
