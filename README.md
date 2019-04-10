@@ -16,7 +16,7 @@
 - gateway-framework gateway框架服务
 - open-basic-comment 评论服务
 - open-basic-user 用户服务
-- open-basic-inter 主要定义统一接口,用于规范代码,置顶业务框架
+- open-base 主要定义统一接口,用于规范代码,置顶业务框架
 - open-tools 工具,主要是便于开发
 - open-framework 统一open系列框架服务,例如集成其他中间件服务
 - open-experiment 试错服务

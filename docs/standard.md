@@ -1,5 +1,14 @@
 # 规范约定(Standard)
 
+### 接口定义规范
+例如接口名为  login
+操作为读操作,请求对象应为  Read+Login+Req
+基于数据交互原则,基本上为读和写,对应Write和Read
+接口入参规范:  Write/Read + 接口名 + Req
+响应参数规范:  接口名 + Resp
+
+
+
 ### 注释
 类注释
 ```
