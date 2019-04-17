@@ -1,5 +1,6 @@
 package com.open.spi.user;
 
+import com.open.spi.user.req.ReadCountReq;
 import com.open.spi.user.req.ReadLoginReq;
 import com.open.spi.user.req.WriteRegisterReq;
 
@@ -12,17 +13,24 @@ import com.open.spi.user.req.WriteRegisterReq;
 public interface UserService {
 
     /**
-     * 注册接口
+     * 注册接口(email,phone两种注册方式)
      * @param writeRegisterReq
      * @return
      */
     Integer register(WriteRegisterReq writeRegisterReq);
 
     /**
-     * 登录接口
+     * 登录接口(email,phone两种注册方式)
      * @param readLoginReq
      * @return
      */
     Integer login(ReadLoginReq readLoginReq);
 
+    /**
+     * 检测用户是否存在(email,phone两个验证方式)
+     *
+     * @param readCountReq
+     * @return
+     */
+    Integer count(ReadCountReq readCountReq);
 }
