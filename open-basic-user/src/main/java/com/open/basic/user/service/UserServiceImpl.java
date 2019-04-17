@@ -1,8 +1,8 @@
 package com.open.basic.user.service;
 
 import com.open.spi.user.UserService;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import com.open.spi.user.req.ReadLoginReq;
+import com.open.spi.user.req.WriteRegisterReq;
 
 
 /**
@@ -13,5 +13,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 public class UserServiceImpl implements UserService {
 
+    @Override
+    public Integer register(WriteRegisterReq writeRegisterReq) {
+        return null;
+    }
 
+    @Override
+    public Integer login(ReadLoginReq readLoginReq) {
+        return null;
+    }
 }
