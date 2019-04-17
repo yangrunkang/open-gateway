@@ -1,5 +1,6 @@
 package com.open.spi.user;
 
+import com.open.spi.user.req.ReadCaptchaReq;
 import com.open.spi.user.req.ReadCountReq;
 import com.open.spi.user.req.ReadLoginReq;
 import com.open.spi.user.req.WriteRegisterReq;
@@ -33,4 +34,13 @@ public interface UserService {
      * @return
      */
     Integer count(ReadCountReq readCountReq);
+
+    /**
+     * 检查验证内容是否正确(Redis缓存: email/phone_captcha_code)
+     *
+     * @param readCaptchaReq
+     * @return
+     */
+    Integer captcha(ReadCaptchaReq readCaptchaReq);
+
 }
