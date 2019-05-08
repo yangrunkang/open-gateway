@@ -32,3 +32,6 @@
  进入到当前项目,需要将当前目录雷荣推送到两一个仓库,按照下面的语法进行操作即可<br/>
  git push [远程库名] [本地分支名]:[远程分支名]<br/>
  示例:git push https://github.com/kangrunyang/open-gateway.git master:origin<br/>
+ 
+ ### 在Git命令中提交
+ git add . && git commit -m "提交内容描述" && git push
