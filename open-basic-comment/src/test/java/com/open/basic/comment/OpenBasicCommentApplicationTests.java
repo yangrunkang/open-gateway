@@ -1,4 +1,4 @@
-package com.open.basic.comment.openbasiccomment;
+package com.open.basic.comment;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

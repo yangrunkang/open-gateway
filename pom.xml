@@ -58,6 +58,9 @@
         <module>gateway-x-zipkin-server</module>
         <module>gateway-x-hystrix-dashboard</module>
         <module>open-experiment</module>
+        <module>open-basic-content</module>
+        <module>open-spi-content</module>
+        <module>open-spi-comment</module>
     </modules>
 
 
