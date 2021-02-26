@@ -1,4 +1,4 @@
-package com.open.basic.comment.openbasiccomment;
+package com.open.basic.comment;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

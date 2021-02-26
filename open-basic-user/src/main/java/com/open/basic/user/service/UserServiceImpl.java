@@ -1,8 +1,10 @@
 package com.open.basic.user.service;
 
 import com.open.spi.user.UserService;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import com.open.spi.user.req.ReadCaptchaReq;
+import com.open.spi.user.req.ReadCountReq;
+import com.open.spi.user.req.ReadLoginReq;
+import com.open.spi.user.req.WriteRegisterReq;
 
 
 /**
@@ -13,5 +15,26 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 public class UserServiceImpl implements UserService {
 
+    @Override
+    public Integer register(WriteRegisterReq writeRegisterReq) {
+        // 1. 检查是否存在
+        // 2. 发送验证内容
+        return null;
+    }
 
+    @Override
+    public Integer login(ReadLoginReq readLoginReq) {
+        return null;
+    }
+
+
+    @Override
+    public Integer count(ReadCountReq readCountReq) {
+        return null;
+    }
+
+    @Override
+    public Integer captcha(ReadCaptchaReq readCaptchaReq) {
+        return null;
+    }
 }

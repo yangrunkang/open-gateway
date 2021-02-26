@@ -46,7 +46,7 @@
     <modules>
         <module>open-basic-user</module>
         <module>open-basic-comment</module>
-        <module>open-basic-inter</module>
+        <module>open-base</module>
         <module>open-spi-user</module>
         <module>gateway-x</module>
         <module>gateway-x-server-center</module>
@@ -57,6 +57,10 @@
         <module>gateway-x-config</module>
         <module>gateway-x-zipkin-server</module>
         <module>gateway-x-hystrix-dashboard</module>
+        <module>open-experiment</module>
+        <module>open-basic-content</module>
+        <module>open-spi-content</module>
+        <module>open-spi-comment</module>
     </modules>
 
 

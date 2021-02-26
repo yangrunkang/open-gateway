@@ -18,9 +18,10 @@
 - gateway-framework gateway框架服务
 - open-basic-comment 评论服务
 - open-basic-user 用户服务
-- open-basic-inter 主要定义统一接口,用于规范代码,置顶业务框架
+- open-base 主要定义统一接口,用于规范代码,置顶业务框架
 - open-tools 工具,主要是便于开发
 - open-framework 统一open系列框架服务,例如集成其他中间件服务
+- open-experiment 试错服务
 
 ### 应用启动顺序
 - 服务注册中心
@@ -60,12 +61,12 @@
 1.创建子模块时出现以下错误:<br />
 Failed to create a Maven project: 'D:/GitLab/OpenSeries/open-gateway/pom.xml' already exists in VFS<br />
   解决方法:<br />
-![输入图片说明](https://images.gitee.com/uploads/images/2019/0102/154059_b9b3c39b_112702.png "微信截图_20190102153220.png")
+![新建module命名](https://github.com/kangrunyang/open-gateway/blob/dev-0.0.1/asserts/命名.png)
 
 2.开发过程中,如果看不到父项目了,把父项目放在一个文件夹下,idea打开这个文件夹
 
 3.Idea插件安装<br />
-![输入图片说明](https://images.gitee.com/uploads/images/2019/0104/095407_b5bea096_112702.png "微信截图_20190104094937.png")
+![idea插件安装](https://github.com/kangrunyang/open-gateway/blob/dev-0.0.1/asserts/idea插件安装.png)
 
 
 
